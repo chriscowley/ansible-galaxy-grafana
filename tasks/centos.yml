@@ -18,3 +18,9 @@
   service: name={{ item }} state=started enabled=yes
   with_items:
     - grafana-server
+
+- name: open firewall
+  firewalld:
+      port: 3000/tcp
+      permanent: true
+  when: 'grafana_manage_fw == true'

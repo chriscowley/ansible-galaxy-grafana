@@ -1,3 +1,3 @@
 ---
 # defaults file for grafana
-
+grafana_manage_fw: true
