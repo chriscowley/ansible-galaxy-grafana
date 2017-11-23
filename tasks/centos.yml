@@ -23,4 +23,6 @@
   firewalld:
       port: 3000/tcp
       permanent: true
+      immediate: true
+      permanent: true
   when: 'grafana_manage_fw == true'
